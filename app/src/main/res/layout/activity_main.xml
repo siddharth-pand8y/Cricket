@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/team-card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/kkr"
+
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/kkr1"
+                android:gravity="center_horizontal"
+                android:padding="16sp"
+                android:text="Kolkata Knight Riders"
+                android:textAllCaps="true"
+                android:textColor="@color/kkr2"
+                android:textSize="14dp"
+
+
+                />
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".MainActivity"
+
+                >
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"
+
+                    />
+
+                <TextView
+
+                    android:id="@+id/team_a_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:text="0/0"
+                    android:textColor="@color/kkr2"
+                    android:textSize="35dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".MainActivity"
+
+                >
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"
+
+                    />
+
+                <TextView
+
+                    android:id="@+id/team_a_over"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:text="0.0"
+                    android:textColor="@color/kkr1"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/kkr2"
+
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/pjb2"
+
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/kp2"
+                android:gravity="center_horizontal"
+                android:padding="16sp"
+                android:text="King XI Punjab"
+                android:textAllCaps="true"
+                android:textColor="@color/kp1"
+                android:textSize="14dp"
+
+                />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".MainActivity"
+
+                >
+
+
+                <TextView
+
+                    android:id="@+id/team_b_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:text="0/0"
+                    android:textColor="@color/kp1"
+                    android:textSize="35dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+
+                <TextView
+
+                    android:id="@+id/team_b_over"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+
+                    android:gravity="center_horizontal"
+                    android:text="0.0"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/team-card"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/yellow"
+        android:id="@+id/line-sep"
+        />
+    <TextView
+
+        android:id="@+id/last_ball_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line-sep"
+        android:gravity="center_horizontal"
+        android:padding="16sp"
+        android:text="Last Ball"
+        android:textSize="18dp" />
+
+    <TextView
+
+        android:id="@+id/team_a_run"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_ball_text_view"
+        android:gravity="center_horizontal"
+        android:padding="6sp"
+        android:text="-"
+        android:textSize="24dp" />
+
+
+    <ImageButton
+        android:id="@+id/score_one"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ss"
+        android:background="@null"
+        android:layout_below="@id/team_a_run"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="NextBall"
+       />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:layout_margin="12dp"
+        android:onClick="resett"
+        android:text="RESET"
+
+        />
+
+
+</RelativeLayout>
